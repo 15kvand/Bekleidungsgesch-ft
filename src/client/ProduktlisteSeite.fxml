@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1099.0" style="-fx-background-color: #2E3348;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.ProduktlisteController">
+   <children>
+      <AnchorPane layoutY="83.0" prefHeight="686.0" prefWidth="1099.0" style="-fx-background-color: #fafafa;">
+         <children>
+            <TableView fx:id="produktListeTabelle" layoutX="58.0" layoutY="25.0" prefHeight="413.0" prefWidth="984.0">
+              <columns>
+                <TableColumn fx:id="produktBildColumn" prefWidth="163.0" text="Bild" />
+                <TableColumn fx:id="produktIdColumn" minWidth="0.0" prefWidth="85.0" text="id" />
+                  <TableColumn fx:id="produktNameColumn" prefWidth="185.0" text="Name" />
+                  <TableColumn fx:id="produktBeschreibungColumn" minWidth="9.0" prefWidth="367.0" text="Beschreibung" />
+                  <TableColumn fx:id="produktGroesseColumn" prefWidth="101.0" text="Größe" />
+                  <TableColumn fx:id="produktPreisColumn" prefWidth="82.0" text="Preis" />
+              </columns>
+            </TableView>
+            <Button fx:id="entfernenButton" layoutX="368.0" layoutY="575.0" mnemonicParsing="false" onAction="#handleEntfernenButtonAction" style="-fx-background-color: #F39C63;" text="Entfernen" textFill="WHITE">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Button>
+            <Button fx:id="hinzufuegenButton" layoutX="48.0" layoutY="575.0" mnemonicParsing="false" onAction="#handleHinzufuegenButtonAction" style="-fx-background-color: #F39C63;" text="Hinzufügen" textFill="WHITE">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Button>
+            <Button fx:id="bearbeitenButton" layoutX="210.0" layoutY="575.0" mnemonicParsing="false" onAction="#handleBearbeitenButtonAction" style="-fx-background-color: #F39C63;" text="Bearbeiten" textFill="WHITE">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Button>
+            <Button fx:id="inDenKorbLegenButton" layoutX="69.0" layoutY="502.0" mnemonicParsing="false" onAction="#handleInDenKorbLegenButtonAction" style="-fx-background-color: #F39C63;" text="in den Korb legen" textFill="WHITE">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Button>
+            <Button fx:id="zurKasseGehenButton" layoutX="285.0" layoutY="504.0" mnemonicParsing="false" onAction="#handleZurKasseGehenButtonAction" style="-fx-background-color: #F39C63;" text="zur Kasse gehen" textFill="WHITE">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Button>
+            <Button fx:id="zurueckButton" layoutX="922.0" layoutY="575.0" mnemonicParsing="false" onAction="#handleZurueckButtonAction" style="-fx-background-color: #F39C63;" text="Zurück" textFill="WHITE">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Label layoutX="442.0" layoutY="-6.0" text="Produktliste" textFill="WHITE">
+         <font>
+            <Font name="Lava Kannada Regular" size="39.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="775.0" prefWidth="874.0" style="-fx-background-color: #2E3348;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.VerkaufsmanagementController">
+   <children>
+      <AnchorPane layoutY="88.0" prefHeight="687.0" prefWidth="873.0" style="-fx-background-color: #fafafa;">
+         <children>
+            <Label layoutX="48.0" layoutY="14.0" text="Kundenliste">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <TableView fx:id="kundenListeTabelle" layoutX="23.0" layoutY="56.0" prefHeight="218.0" prefWidth="822.0">
+              <columns>
+                <TableColumn fx:id="kundenIdColumn" prefWidth="97.0" text="id" />
+                <TableColumn fx:id="kundenNameColumn" prefWidth="184.0" text="Name" />
+                  <TableColumn fx:id="kundenDatumColumn" minWidth="0.0" prefWidth="127.0" text="Datum" />
+                  <TableColumn fx:id="kundenEmailColumn" minWidth="3.0" prefWidth="148.0" text="Email" />
+                  <TableColumn fx:id="kundenAdresseColumn" prefWidth="143.0" text="Adresse" />
+                  <TableColumn fx:id="kundenTelNummerColumn" prefWidth="122.0" text="Tel Nummer" />
+              </columns>
+            </TableView>
+            <TableView fx:id="bestellListeTabelle" layoutX="23.0" layoutY="359.0" prefHeight="218.0" prefWidth="822.0">
+               <columns>
+                  <TableColumn fx:id="bestellungIdColumn" prefWidth="97.0" text="id" />
+                  <TableColumn fx:id="bestellungNameColumn" prefWidth="167.0" text="Name" />
+                  <TableColumn fx:id="bestellungBeschreibungColumn" minWidth="0.0" prefWidth="199.0" text="Beschreibung" />
+                  <TableColumn fx:id="bestellungGroesseColumn" minWidth="3.0" prefWidth="101.0" text="Größe" />
+                  <TableColumn fx:id="bestellungAnzahlColumn" prefWidth="91.0" text="Anzahl" />
+                  <TableColumn fx:id="bestellungPreisColumn" prefWidth="73.0" text="Preis" />
+                  <TableColumn fx:id="bestellungAnfrageColumn" prefWidth="93.0" text="Bestellanfrage " />
+               </columns>
+            </TableView>
+            <Label layoutX="48.0" layoutY="313.0" text="Bestelliste des ausgewählten Kunden:">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="zurueckButton" layoutX="742.0" layoutY="619.0" mnemonicParsing="false" onAction="#handleZurueckButtonAction" prefHeight="36.0" prefWidth="103.0" style="-fx-background-color: #F39C63;" text="Zurück" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Label layoutX="229.0" text="Verkaufsmanagement" textFill="WHITE">
+         <font>
+            <Font name="Lava Kannada Regular" size="42.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
