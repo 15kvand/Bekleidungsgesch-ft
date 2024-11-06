@@ -4,8 +4,8 @@
 /**
  * 
  */
-module BGV2_Server {
-	requires java.sql;
-	requires jdk.httpserver;
-	requires BGV2_Klassen;
+module BGV2_Klassen {
+	requires java.xml;
+	requires java.desktop;
+	exports klassen;
 }
